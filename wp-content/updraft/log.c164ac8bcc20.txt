@@ -1,0 +1,89 @@
+0000.000 (0) Opened log file at time: Thu, 05 Sep 2019 16:10:03 +0000 on https://portfolio.wp-headless.fr
+0000.002 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.16 WP: 5.2.3 PHP: 7.2.22 (fpm-fcgi, Linux hr238619883.reseller.mis.ovh.net 4.9.0-0.bpo.9-amd64 #1 SMP Debian 4.9.168-1+deb9u4~deb8u1 (2019-07-22) x86_64) MySQL: 10.0.38-MariaDB-0+deb8u1 WPLANG: fr_FR Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 10.5M | 4M) multisite: N openssl: OpenSSL 1.0.1t  3 May 2016 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.004 (0) Free space on disk containing Updraft's temporary directory: 34368.6 MB
+0000.007 (0) Tasks: Backup files: 0 (schedule: manual) Backup DB: 1 (schedule: weekly)
+0000.009 (0) Semaphore (d, Ie7WK_options) being initialised
+0000.012 (0) Requesting semaphore lock (d) (apparently not via scheduler)
+0000.015 (0) Set semaphore last lock (d) time to 2019-09-05 16:10:03
+0000.016 (0) Semaphore lock (d) complete
+0000.020 (0) Backup run: resumption=0, nonce=c164ac8bcc20, file_nonce=c164ac8bcc20 begun at=1567699803 (0s ago), job type=backup
+0000.025 (0) Scheduling a resumption (1) after 300 seconds (1567700103) in case this run gets aborted
+0000.048 (0) This backup run is not intended for files - skipping
+0000.049 (0) Beginning creation of database dump (WordPress DB)
+0000.055 (0) Table Ie7WK_options: Total expected rows (approximate): 203
+0000.076 (0) Table Ie7WK_options: Total rows added: 202 in 0.02 seconds
+0000.077 (0) Table Ie7WK_options: finishing file (backup_2019-09-05-1610_Portfolio_Admin_c164ac8bcc20-db-table-Ie7WK_options.table.gz - 70 KB)
+0000.083 (0) Table Ie7WK_users: Total expected rows (approximate): 1
+0000.086 (0) Table Ie7WK_users: Total rows added: 1 in 0.00 seconds
+0000.087 (0) Table Ie7WK_users: finishing file (backup_2019-09-05-1610_Portfolio_Admin_c164ac8bcc20-db-table-Ie7WK_users.table.gz - 0.6 KB)
+0000.091 (0) Table Ie7WK_usermeta: Total expected rows (approximate): 19
+0000.094 (0) Table Ie7WK_usermeta: Total rows added: 19 in 0.00 seconds
+0000.095 (0) Table Ie7WK_usermeta: finishing file (backup_2019-09-05-1610_Portfolio_Admin_c164ac8bcc20-db-table-Ie7WK_usermeta.table.gz - 0.9 KB)
+0000.101 (0) Table Ie7WK_commentmeta: Total expected rows (approximate): 0
+0000.103 (0) Table Ie7WK_commentmeta: Total rows added: 0 in 0.00 seconds
+0000.104 (0) Table Ie7WK_commentmeta: finishing file (backup_2019-09-05-1610_Portfolio_Admin_c164ac8bcc20-db-table-Ie7WK_commentmeta.table.gz - 0.4 KB)
+0000.108 (0) Table Ie7WK_comments: Total expected rows (approximate): 1
+0000.111 (0) Table Ie7WK_comments: Total rows added: 1 in 0.00 seconds
+0000.112 (0) Table Ie7WK_comments: finishing file (backup_2019-09-05-1610_Portfolio_Admin_c164ac8bcc20-db-table-Ie7WK_comments.table.gz - 0.7 KB)
+0000.117 (0) Table Ie7WK_links: Total expected rows (approximate): 0
+0000.119 (0) Table Ie7WK_links: Total rows added: 0 in 0.00 seconds
+0000.120 (0) Table Ie7WK_links: finishing file (backup_2019-09-05-1610_Portfolio_Admin_c164ac8bcc20-db-table-Ie7WK_links.table.gz - 0.4 KB)
+0000.126 (0) Table Ie7WK_postmeta: Total expected rows (approximate): 2
+0000.127 (0) Table Ie7WK_postmeta: Total rows added: 2 in 0.00 seconds
+0000.128 (0) Table Ie7WK_postmeta: finishing file (backup_2019-09-05-1610_Portfolio_Admin_c164ac8bcc20-db-table-Ie7WK_postmeta.table.gz - 0.4 KB)
+0000.132 (0) Table Ie7WK_posts: Total expected rows (approximate): 4
+0000.134 (0) Table Ie7WK_posts: Total rows added: 4 in 0.00 seconds
+0000.135 (0) Table Ie7WK_posts: finishing file (backup_2019-09-05-1610_Portfolio_Admin_c164ac8bcc20-db-table-Ie7WK_posts.table.gz - 3.1 KB)
+0000.139 (0) Table Ie7WK_term_relationships: Total expected rows (approximate): 1
+0000.140 (0) Table Ie7WK_term_relationships: Total rows added: 1 in 0.00 seconds
+0000.141 (0) Table Ie7WK_term_relationships: finishing file (backup_2019-09-05-1610_Portfolio_Admin_c164ac8bcc20-db-table-Ie7WK_term_relationships.table.gz - 0.4 KB)
+0000.145 (0) Table Ie7WK_term_taxonomy: Total expected rows (approximate): 1
+0000.150 (0) Table Ie7WK_term_taxonomy: Total rows added: 1 in 0.00 seconds
+0000.151 (0) Table Ie7WK_term_taxonomy: finishing file (backup_2019-09-05-1610_Portfolio_Admin_c164ac8bcc20-db-table-Ie7WK_term_taxonomy.table.gz - 0.4 KB)
+0000.155 (0) Table Ie7WK_termmeta: Total expected rows (approximate): 0
+0000.156 (0) Table Ie7WK_termmeta: Total rows added: 0 in 0.00 seconds
+0000.157 (0) Table Ie7WK_termmeta: finishing file (backup_2019-09-05-1610_Portfolio_Admin_c164ac8bcc20-db-table-Ie7WK_termmeta.table.gz - 0.4 KB)
+0000.163 (0) Table Ie7WK_terms: Total expected rows (approximate): 1
+0000.165 (0) Table Ie7WK_terms: Total rows added: 1 in 0.00 seconds
+0000.168 (0) Table Ie7WK_terms: finishing file (backup_2019-09-05-1610_Portfolio_Admin_c164ac8bcc20-db-table-Ie7WK_terms.table.gz - 0.4 KB)
+0000.173 (0) backup_2019-09-05-1610_Portfolio_Admin_c164ac8bcc20-db-table-Ie7WK_options.table.gz (1/12): adding to final database dump
+0000.187 (0) backup_2019-09-05-1610_Portfolio_Admin_c164ac8bcc20-db-table-Ie7WK_users.table.gz (2/12): adding to final database dump
+0000.188 (0) backup_2019-09-05-1610_Portfolio_Admin_c164ac8bcc20-db-table-Ie7WK_usermeta.table.gz (3/12): adding to final database dump
+0000.190 (0) backup_2019-09-05-1610_Portfolio_Admin_c164ac8bcc20-db-table-Ie7WK_commentmeta.table.gz (4/12): adding to final database dump
+0000.190 (0) backup_2019-09-05-1610_Portfolio_Admin_c164ac8bcc20-db-table-Ie7WK_comments.table.gz (5/12): adding to final database dump
+0000.191 (0) backup_2019-09-05-1610_Portfolio_Admin_c164ac8bcc20-db-table-Ie7WK_links.table.gz (6/12): adding to final database dump
+0000.191 (0) backup_2019-09-05-1610_Portfolio_Admin_c164ac8bcc20-db-table-Ie7WK_postmeta.table.gz (7/12): adding to final database dump
+0000.192 (0) backup_2019-09-05-1610_Portfolio_Admin_c164ac8bcc20-db-table-Ie7WK_posts.table.gz (8/12): adding to final database dump
+0000.193 (0) backup_2019-09-05-1610_Portfolio_Admin_c164ac8bcc20-db-table-Ie7WK_term_relationships.table.gz (9/12): adding to final database dump
+0000.193 (0) backup_2019-09-05-1610_Portfolio_Admin_c164ac8bcc20-db-table-Ie7WK_term_taxonomy.table.gz (10/12): adding to final database dump
+0000.195 (0) backup_2019-09-05-1610_Portfolio_Admin_c164ac8bcc20-db-table-Ie7WK_termmeta.table.gz (11/12): adding to final database dump
+0000.195 (0) backup_2019-09-05-1610_Portfolio_Admin_c164ac8bcc20-db-table-Ie7WK_terms.table.gz (12/12): adding to final database dump
+0000.196 (0) backup_2019-09-05-1610_Portfolio_Admin_c164ac8bcc20-db.gz: finished writing out complete database file (48 KB)
+0000.203 (0) Total database tables backed up: 12 (backup_2019-09-05-1610_Portfolio_Admin_c164ac8bcc20-db.gz, size: 76710, sha1: 9d35d25c092f3ad2f08f83d3f3c7f9f856d72b4b, sha256: 4156c75fe8e51bd53cead711455a1e3b32bfceceba0714c7a315c4463e7ae91e)
+0000.207 (0) backup_2019-09-05-1610_Portfolio_Admin_c164ac8bcc20-db.gz: db: This file has not yet been successfully uploaded: will queue
+0000.209 (0) Saving backup history. Total backup size: 74.9 KB
+0000.211 (0) Requesting upload of the files that have not yet been successfully uploaded (1)
+0000.214 (0) Cloud backup selection (1/1): dropbox with instance (1/1) (last)
+0000.216 (0) Beginning dispatch of backup to remote (dropbox) (instance identifier s-f0acd6996df226c3901c9e7cd8504602)
+0000.217 (0) Dropbox: begin cloud upload (using API version 2 with OAuth v2 token)
+0000.218 (0) Dropbox: access gained; setting chunk size to: 1024 KB
+0000.556 (0) Dropbox: quota usage: used=1037.8 MB, total=2048 MB, available=1010.2 MB
+0000.559 (0) Dropbox: Attempt to upload: backup_2019-09-05-1610_Portfolio_Admin_c164ac8bcc20-db.gz to: backup_2019-09-05-1610_Portfolio_Admin_c164ac8bcc20-db.gz
+0001.333 (0) Dropbox chunked upload: 100 % uploaded (AAAAAAAAAlPptPtj3_DurA, 76710, 1024 KB)
+0002.486 (0) Recording as successfully uploaded: backup_2019-09-05-1610_Portfolio_Admin_c164ac8bcc20-db.gz
+0002.490 (0) Deleting local file: backup_2019-09-05-1610_Portfolio_Admin_c164ac8bcc20-db.gz: OK
+0002.491 (0) Dropbox: File upload success (backup_2019-09-05-1610_Portfolio_Admin_c164ac8bcc20-db.gz): 74 KB in 1s (38 KB/s)
+0002.499 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=5
+0002.503 (0) Number of backup sets in history: 1; groups (db): 1
+0002.505 (0) Examining (for databases) backup set with group_id=0, nonce=c164ac8bcc20, datestamp=1567699803 (Sep 05 2019 16:10:03)
+0002.506 (0) This backup set is the backup set just made, so will not be deleted.
+0002.506 (0) Number of backup sets in history: 1; groups (files): 1
+0002.506 (0) Examining (for files) backup set with nonce=c164ac8bcc20, datestamp=1567699803 (Sep 05 2019 16:10:03)
+0002.506 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0002.507 (0) Retain: saving new backup history (sets now: 1) and finishing retain operation
+0002.510 (0) Resume backup (c164ac8bcc20, 0): finish run
+0002.513 (0) Decremented the semaphore (d) by 1
+0002.513 (0) Semaphore (d) unlocked
+0002.514 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0002.518 (0) No email will/can be sent - the user has not configured an email address.
+0002.519 (0) The backup apparently succeeded and is now complete
