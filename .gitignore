@@ -73,3 +73,6 @@ wp-includes/
 /css
 /.well-known
 /favicon.ico
+
+# Editor
+.idea
