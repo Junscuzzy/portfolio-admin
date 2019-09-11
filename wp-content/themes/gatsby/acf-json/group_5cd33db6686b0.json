@@ -316,9 +316,9 @@
         },
         {
             "key": "field_5d717ab04322d",
-            "label": "Footer textarea",
-            "name": "footer_textarea",
-            "type": "wysiwyg",
+            "label": "Footer small",
+            "name": "footer_small",
+            "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -327,11 +327,11 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "Julien Caron, développeur Web, Alicante, Espagne\r\n\r\nSite réalisé avec WordPress + Gatsby.js + Netlify",
-            "tabs": "all",
-            "toolbar": "basic",
-            "media_upload": 0,
-            "delay": 0
+            "default_value": "Site réalisé avec WordPress + Gatsby + Netlify. ❤",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         }
     ],
     "location": [
@@ -364,5 +364,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1567718433
+    "modified": 1568205181
 }
