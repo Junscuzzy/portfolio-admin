@@ -31,39 +31,6 @@ add_action( 'after_setup_theme', function () {
      */
     add_theme_support( 'post-thumbnails' );
 
-    // This theme uses wp_nav_menu() in one location.
-    register_nav_menus( array(
-        'menu-1' => esc_html__( 'Primary', 'gatsby' ),
-    ) );
-
-} );
-
-/**
- * Register widget area.
- *
- * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
- */
-add_action( 'widgets_init', function () {
-    register_sidebar( array(
-        'name'          => esc_html__( 'Sidebar', 'gatsby' ),
-        'id'            => 'sidebar-1',
-        'description'   => esc_html__( 'Add widgets here.', 'gatsby' ),
-    ) );
-} );
-
-/**
- * Enqueue scripts and styles.
- */
-add_action( 'wp_enqueue_scripts', function () {
-    wp_enqueue_style( 'gatsby-style', get_stylesheet_uri() );
-
-//    wp_enqueue_script(
-//        'gatsby-navigation',
-//        get_template_directory_uri() . '/js/navigation.js',
-//        array(),
-//        '20151215',
-//        true
-//    );
 } );
 
 /**
@@ -78,7 +45,7 @@ add_action( 'init', function () {
             'singular_name' => __( 'Projet' )
         ),
         'menu_icon' => 'dashicons-portfolio',
-        'supports' => array('title', 'editor', 'thumbnail', 'excerpt', 'revisions', 'post-formats' ),
+        'supports' => array('title', 'editor', 'thumbnail', 'revisions', 'post-formats' ),
         'public' => true,
         'show_in_rest' => true,
         'has_archive' => true,
@@ -149,8 +116,8 @@ add_action( 'add_attachment', function ( $post_ID ) {
 if( function_exists('acf_add_options_page') ) {
 	
 	acf_add_options_page(array(
-		'page_title' 	=> 'Theme General Settings',
-		'menu_title'	=> 'Theme Settings',
+		'page_title' 	=> __('Theme General Settings'),
+		'menu_title'	=> __('Theme Settings'),
 		'menu_slug' 	=> 'theme-general-settings',
 		'capability'	=> 'edit_posts',
 		'redirect'		=> true
