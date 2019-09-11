@@ -86,11 +86,6 @@ add_action( 'admin_menu', function () {
     remove_menu_page( 'edit.php' );
 } );
 
-// The +New Post in Admin Bar
-add_action( 'admin_bar_menu', function ( $wp_admin_bar ) {
-    $wp_admin_bar->remove_node( 'new-post' );
-}, 999 );
-
 // The Quick Draft Dashboard Widget
 add_action( 'wp_dashboard_setup', function (){
     remove_meta_box( 'dashboard_quick_press', 'dashboard', 'side' );
@@ -124,3 +119,28 @@ if( function_exists('acf_add_options_page') ) {
 	));
 	
 }
+
+// Add real site name and remove default wordpress link
+add_action( 'wp_before_admin_bar_render', function () {
+    global $wp_admin_bar;
+
+    // 1. Remove unused menu items
+    //$wp_admin_bar->remove_menu('wp-logo');		    // Remove the WordPress logo
+    $wp_admin_bar->remove_menu('site-name');			// Remove the site name menu
+    //$wp_admin_bar->remove_menu('view-site');			// Remove the view site link
+    $wp_admin_bar->remove_menu('updates');				// Remove the updates link
+    $wp_admin_bar->remove_menu('comments');				// Remove the user details tab
+    $wp_admin_bar->remove_menu('customize');			// Remove W3 total cache plugin link
+    $wp_admin_bar->remove_menu('new-post');				// Remove the blog new post link
+
+    // 2. Add new site link
+    $wp_admin_bar->add_menu(array(
+        'id' => 'site_url',
+        'title' => __('Voir le site'),
+        'href' => 'https://juliencaron.eu',
+        'meta' => array(
+            'target' => '_blank'
+        )
+    ));
+
+}, 999 ); 
