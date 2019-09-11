@@ -144,3 +144,16 @@ add_action( 'add_attachment', function ( $post_ID ) {
         update_post_meta( $post_ID, '_wp_attachment_image_alt', $img_title );
     }
 } );
+
+// Add ACF options page
+if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_page(array(
+		'page_title' 	=> 'Theme General Settings',
+		'menu_title'	=> 'Theme Settings',
+		'menu_slug' 	=> 'theme-general-settings',
+		'capability'	=> 'edit_posts',
+		'redirect'		=> true
+	));
+	
+}
