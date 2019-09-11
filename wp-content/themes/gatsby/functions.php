@@ -80,6 +80,7 @@ add_action( 'init', function () {
         'menu_icon' => 'dashicons-portfolio',
         'supports' => array('title', 'editor', 'thumbnail', 'excerpt', 'revisions', 'post-formats' ),
         'public' => true,
+        'show_in_rest' => true,
         'has_archive' => true,
     ) );
 
@@ -91,6 +92,7 @@ add_action( 'init', function () {
             'singular_name' => __( 'Tag' )
         ),
         'public' => true,
+        'show_in_rest' => true,
         'show_admin_column' => true
     ));
 
@@ -102,6 +104,7 @@ add_action( 'init', function () {
             'singular_name' => __( 'Category' )
         ),
         'public' => true,
+        'show_in_rest' => true,
         'show_admin_column' => true
     ));
 
