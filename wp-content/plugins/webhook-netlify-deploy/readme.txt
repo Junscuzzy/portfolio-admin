@@ -1,5 +1,5 @@
 === Deploy Webhook Button ===
-Contributors: lukesecomb
+Contributors: lukesecomb, robertmarshall, kimhornung, marijoo, riddla
 Tags: webhook, netlify, deploy, gatsbyjs, static, build
 Requires at least: 4.4.0
 Tested up to: 5.2.1
@@ -40,6 +40,16 @@ From your WordPress dashboard
 
 
 == Changelog ==
+
+= 1.1.3 =
+* Translated strings added to php code
+
+= 1.1.2 =
+* Added Netlify scheduling settings
+* Refactored settings names to allow easier scaling
+
+= 1.1.1 =
+* Bug fix for new permission hooks not working for "Webhook Deploy" menu and "Developer Settings" submenu
 
 = 1.1.0 =
 * Add Deploy Button and Deploy Status to admin bar
