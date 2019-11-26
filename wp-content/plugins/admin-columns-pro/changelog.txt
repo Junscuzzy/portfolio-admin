@@ -1,5 +1,19 @@
 == Changelog ==
 
+= 4.7.3 =
+Release Date: November 19th, 2019
+
+* [Updated] The minimum version required to run Admin Columns Pro is now PHP 5.6.20.
+* [Fixed] The post status column will now sort correctly
+* [Improved] When the column label is an icon, the column (type) label will be used for the CSV colum header when exporting data
+* [Improved] Show posts with any status when sorting on custom field on default overview (all)
+* [Improved] Adapted new WordPress 5.3 interface styling
+* [Improved] Better Excel support for exported CSV files
+* [Improved] Inline Edit text fields now support maxlength setting
+* [Updated] Admin Column Core changes ( 3.4.8 )
+    * [Fixed] Updated Select2 to 4.0.12 to prevent non closing behavior
+    * [Updated] The minimum version required to run Admin Columns is now PHP 5.6.20
+
 = 4.7.2 =
 Release Date: August 27th, 2019
 

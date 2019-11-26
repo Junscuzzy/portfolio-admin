@@ -13,16 +13,20 @@ use Exception;
 class CSV extends Exporter {
 
 	/**
-	 * @see   BulkPress_Exporter::export()
-	 * @since 1.0
-	 *
 	 * @param      $fh
 	 * @param bool $encrypt
+	 *
+	 * @see   BulkPress_Exporter::export()
+	 * @since 1.0
 	 */
 	public function export( $fh, $encrypt = false ) {
 		if ( $encrypt ) {
 			// Write the CSV to memory
 			$fh_memory = fopen( 'php://memory', 'w' );
+
+			// Writes UTF8 BOM for Excel support
+			fprintf( $fh_memory, chr( 0xEF ) . chr( 0xBB ) . chr( 0xBF ) );
+
 			$this->export( $fh_memory );
 
 			// Read the CSV from memory
@@ -47,10 +51,11 @@ class CSV extends Exporter {
 
 		/**
 		 * Filters the delimiter to use in exporting to the CSV file format
-		 * @since 1.0
 		 *
 		 * @param string $delimiter Delimiter to use
 		 * @param CSV    $exporter  Exporter class instance
+		 *
+		 * @since 1.0
 		 */
 		$delimiter = apply_filters( 'ac/export/exporter_csv/delimiter', ',', $this );
 
@@ -74,11 +79,11 @@ class CSV extends Exporter {
 	 * Format the output to a string. For scalars (integers, strings, etc.), it returns the input
 	 * value cast to a string. For arrays, it (deeply) applies this function to the array values
 	 * and returns them in a comma-separated string
-	 * @since 1.0
 	 *
 	 * @param mixed $value Input value
 	 *
 	 * @return string Formatted value
+	 * @since 1.0
 	 */
 	private function format_output( $value ) {
 		if ( is_scalar( $value ) ) {

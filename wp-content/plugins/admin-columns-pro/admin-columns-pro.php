@@ -1,12 +1,12 @@
 <?php
 /*
 Plugin Name: Admin Columns Pro
-Version: 4.7.2
+Version: 4.7.3
 Description: Customize columns on the administration screens for post(types), users and other content. Filter and sort content, and edit posts directly from the posts overview. All via an intuitive, easy-to-use drag-and-drop interface.
 Author: AdminColumns.com
 Author URI: https://www.admincolumns.com
 Plugin URI: https://www.admincolumns.com
-Requires PHP: 5.3.6
+Requires PHP: 5.6.20
 Text Domain: codepress-admin-columns
 Domain Path: /languages/
 */
@@ -20,7 +20,7 @@ if ( ! is_admin() ) {
 }
 
 define( 'ACP_FILE', __FILE__ );
-define( 'ACP_VERSION', '4.7.2' );
+define( 'ACP_VERSION', '4.7.3' );
 
 /**
  * Deactivate Admin Columns
@@ -41,7 +41,7 @@ add_action( 'plugins_loaded', function () {
  */
 add_action( 'after_setup_theme', function () {
 	$dependencies = new AC\Dependencies( plugin_basename( ACP_FILE ), ACP_VERSION );
-	$dependencies->requires_php( '5.3.6' );
+	$dependencies->requires_php( '5.6.20' );
 
 	if ( $dependencies->has_missing() ) {
 		return;

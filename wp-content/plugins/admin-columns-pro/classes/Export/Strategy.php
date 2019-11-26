@@ -210,7 +210,7 @@ abstract class Strategy {
 			$label = strip_tags( $column->get_setting( 'label' )->get_value() );
 
 			if ( empty( $label ) ) {
-				$label = $header;
+				$label = $column->get_type();
 			}
 
 			$headers[ $header ] = $label;
